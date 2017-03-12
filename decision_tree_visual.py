@@ -16,7 +16,7 @@ train_data = np.delete(iris.data, test_idx, axis=0)
 test_data = iris.data[test_idx] 
 
 clf = clf.fit(train_data, train_target)
-print(clf.predict(test_data))
+print clf.predict(test_data)
 
 # visualization code - I don't really understand this part - just took it from the tutorial
 from sklearn.externals.six import StringIO
